@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>hashtageventos.com</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo"># Hashtag Eventos #</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cadastrar-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    <main>
+        <div class="container">
+            <h2 class="title">Formulário de Cadastro</h2>
+            
+            <form class="form" id="form-cadastro">
+                <label for="name1">Nome: </label>
+                <input type="text" id="name1" name="nome" placeholder="Seu nome completo" required>
+                <label for="name1" id="errorName">Insira seu sobrenome!</label>
+                <label for="email1">E-mail: </label>
+                <input type="email" id="email1" name="email" placeholder="Seu e-mail" required>
+                <label for="age1">Nascimento: </label>
+                <input type="date" id="age1" name="idade" placeholder="Digite o ano do seu nascimeno" required> <!--CAMPO A-->
+                <label for="tel1">Celular: </label>
+                <input type="tel" name="tel" id="tel1" placeholder="(21)99999-9999">
+                <div id="msg-alert">
+                    <p id="alert1">Em caso de menor idade deverá conter um acompanhante!</p>
+                    <label for="name2">Nome acompanhante: </label>
+                    <input type="text" id="name2" name="nome" placeholder="Nome do acompanhante">
+                    <label for="email2">E-mail: </label>
+                    <input type="email" id="email2" name="email" placeholder="E-mail do acompanhante">
+                    <label for="age2">Nascimento: </label>
+                    <input type="date" id="age2" name="idade" placeholder="Nascimento do acompanhante"> <!--CAMPO B-->
+                    <p id="alert2">Seu acompanhante deve ser maior de 18 anos</p>
+                    <label for="tel2">Celular: </label>
+                    <input type="tel" name="tel" id="tel2" placeholder="(21)99999-9999">
+                </div>    
+                <button class="button" type="submit">Cadastrar</button>
+            </form>
+            <div id="msg-sucesso"></div>
+            <div id="resultadoIdade"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p> &copy; Hashtag Eventos - Todos os Direitos Reservados - 2024 / Site desenvolvido por: Thiago Lopes </p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
